@@ -1,0 +1,30 @@
+input, textarea, select {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+
+  padding: .75rem 1rem;
+  font: var(--text-md);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+
+  
+}
+
+label {
+  display: block;
+  margin-bottom: .75rem;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+

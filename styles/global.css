@@ -35,4 +35,40 @@
 
 body {
   overflow: hidden;
+
+  font: var(--text-sm);
+  color: var(--text-body);
 }
+
+main {
+  border-radius: .5rem;
+
+  & h1 {
+    font: var(--text-baloo-md);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+
+  & h2 {
+    font: var(--text-baloo-sm);
+    color: var(--text-heading);
+  }
+
+  & .about {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

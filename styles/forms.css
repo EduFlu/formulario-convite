@@ -1,0 +1,8 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+
+  display: grid;
+  gap: 1rem;
+}

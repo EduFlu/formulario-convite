@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de convite</title>
-  
+
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
@@ -26,9 +26,63 @@
       </div>
     </aside>
     <main>
-      <div class="main-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit minus,
-        perferendis quibusdam fuga voluptates magnam provident architecto sed atque explicabo? Voluptatum vero quam
-        voluptatibus dicta cumque sit neque veniam?</div>
+      <div class="main-container">
+        <h1>Crie seu convite</h1>
+
+        <div class="about">
+          <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+          <h2>Sobre o evento</h2>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset id="about-event">
+
+            <div class="input-wrapper">
+              <label for="name-event">Titulo</label>
+              <input type="text" id="name-event" name="name-event" placeholder="Nome do evento">
+            </div>
+
+            <div class="input-grid">
+              <div class="input-wrapper">
+                <label for="initial-date">Início</label>
+                <input type="date" id="initial-date" name="initial-date" lang="pt-BR">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="final-date">Fim</label>
+                <input type="date" id="final-date" name="final-date" lang="pt-BR">
+              </div>
+            </div>
+
+            <div class="input-grid">
+              <div class="radio-wrapper">
+                <label for="modality">Tipo</label>
+                <div class="input-grid">
+                  <input type="radio" name="modality" id="modality">
+                  <img src="assets/icons/building-2.svg" alt="ícone de um prédio">
+                  <span>Presencial</span>
+                </div>
+                <div class="input-grid">
+                  <input type="" name="modality" id="modality">
+                  <img src="assets/icons/video.svg" alt="ícone de um prédio">
+                  <span>Online</span>
+                </div>
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="locale">Local</label>
+                <input type="url" id="locale" name="locale" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="10"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </main>
   </div>
 </body>
