@@ -8,8 +8,11 @@ input, textarea, select {
   font: var(--text-md);
   color: var(--input-placeholder);
   background-color: var(--input-base);
+}
 
-  
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
 }
 
 label {
@@ -17,14 +20,59 @@ label {
   margin-bottom: .75rem;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  
+  
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+
+  & span {
+    margin-left: .5rem;
+  }
+
+  .radio-btn {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: .5rem;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font: var(--text-md);
+    
+  }
+} 
+
 .input-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 1rem;
+
+  & img {
+    width: 1rem;
+  }
 }
 
-input[type="radio"] {
-  appearance: none;
+input:focus, 
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
 }
 
