@@ -2,7 +2,14 @@ legend + .input-wrapper {
   margin-top: 1rem;
 }
 
+input[type="radio"]:checked + .color-swatch {
+  outline: 3px solid var(--brand-mid);
+  outline-offset: 2px;
+}
 
+input[type="radio"] {
+  display: none;
+}
 
 .color-selection {
   margin: 1.5rem 0 1.75rem 0;
@@ -28,7 +35,7 @@ legend + .input-wrapper {
 
   .color-swatch:hover {
     outline: 3px solid var(--brand-mid);
-    outline-offset: 6px;
+    outline-offset: 2px;
   }
 }
 
