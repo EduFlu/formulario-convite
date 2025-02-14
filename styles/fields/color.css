@@ -1,0 +1,65 @@
+legend + .input-wrapper {
+  margin-top: 1rem;
+}
+
+
+
+.color-selection {
+  margin: 1.5rem 0 1.75rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 0.75rem;
+
+  .color-swatch {
+    cursor: pointer;
+    text-align: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    margin: 2px;
+  }
+
+  .color-swatch:hover {
+    outline: 3px solid var(--brand-mid);
+    outline-offset: 6px;
+  }
+}
+
+
+.color-swatch.light-blue {
+  background-color: #59B2FF;
+}
+.color-swatch.purple {
+  background-color: #6A59FF;
+}
+.color-swatch.pink {
+  background-color: #B259FF;
+}
+.color-swatch.red {
+  background-color: #FF59F9;
+}
+.color-swatch.orange {
+  background-color: #FF598B;
+}
+.color-swatch.yellow-orange {
+  background-color: #FF5959;
+}
+.color-swatch.yellow {
+  background-color: #FF8B59;
+}
+.color-swatch.light-yellow-green {
+  background-color: #E1FF59;
+}
+.color-swatch.green {
+  background-color: #59FF91;
+}
+.color-swatch.cyan {
+  background-color: #59FFF9;
+}
