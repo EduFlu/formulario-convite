@@ -1,0 +1,33 @@
+.dropzone {
+  border-radius: 1rem;
+  background-color: var(--shape-button);
+  width: 8.125rem;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: .75rem;
+
+  & span {
+    font: var(--text-sm);
+    color: var(--text-heading);
+  }
+
+  & input {
+    opacity: 0;
+  }
+}
+
+.display-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.drop {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}

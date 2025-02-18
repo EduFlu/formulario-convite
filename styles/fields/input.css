@@ -76,3 +76,23 @@ input[type="date"] {
   }
 }
 
+input {
+  &:invalid {
+    border: .125rem solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: var(--danger);
+
+    margin-top: .25rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+}
+

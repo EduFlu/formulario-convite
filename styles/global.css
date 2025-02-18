@@ -72,5 +72,9 @@ img {
   height: auto;
 }
 
-
+hr {
+  border: none;
+  border-top: 1px solid var(--input-stroke);
+  margin: 3rem 0 2.5rem 0;
+}
 
